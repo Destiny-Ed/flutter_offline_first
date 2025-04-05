@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:flutter_offline_first/src/core/hive_storage_service.dart';
+import 'package:offline_first_support/src/core/hive_storage_service.dart';
 import 'package:hive_ce_flutter/hive_flutter.dart';
-import 'package:flutter_offline_first/src/core/api_client.dart';
-import 'package:flutter_offline_first/src/core/network_helper.dart';
-import 'package:flutter_offline_first/src/data/fetch_response.dart';
+import 'package:offline_first_support/src/core/api_client.dart';
+import 'package:offline_first_support/src/core/network_helper.dart';
+import 'package:offline_first_support/src/data/fetch_response.dart';
 
 enum OfflineFirstFetchPolicy { networkOnly, cacheOnly, cacheThenNetwork }
 
