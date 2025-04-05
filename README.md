@@ -1,27 +1,48 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+# OfflineFirst Flutter Package
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## Overview
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+The `OfflineFirst` package for Flutter helps implement an **Offline First** approach for fetching, saving, and watching data with local caching using **Hive** as the local database. It supports various fetching strategies and integrates with network requests seamlessly to ensure your application works efficiently offline and online.
 
-## Features
+This package provides the following features:
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Fetch data from network or cache using specified fetch policies.
+- Save data locally for offline access.
+- Watch for data updates with streams.
+- Simple and easy-to-use API to manage data persistence.
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+
+## Installation
+
+Add the following dependency to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  offline_first: latest
+```
+
+Run the command to fetch dependencies:
+
+```bash
+flutter pub get
+```
+
+## Initialization
+
+Before using the OfflineFirst package, you need to initialize it in the main() method of your application:
+
+```dart
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await OfflineFirst.init();  // Initialize Offline First
+  runApp(MyApp());
+}
+```
+Once it has been initialized, you can start using the OfflineFirst class to fetch, save, and watch data.
+
 
 ## Usage
 
