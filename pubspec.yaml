@@ -1,7 +1,7 @@
 name: offline_first
-description: "A new Flutter package project."
+description: This package helps to implement an **Offline First** approach for fetching, saving, and watching data with local caching using **Hive** as the local database.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Destiny-Ed/offline_first
 
 environment:
   sdk: ^3.7.2
@@ -10,6 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  hive_ce: ^2.10.1
+  hive_ce_flutter: ^2.2.0
+  connectivity_plus: ^6.1.3
+  http: ^1.3.0
+  
 
 dev_dependencies:
   flutter_test:
