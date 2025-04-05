@@ -1,9 +1,9 @@
 
-# OfflineFirst Flutter Package
+# Flutter Offline First Package
 
 ## Overview
 
-The `OfflineFirst` package for Flutter helps implement an **Offline First** approach for fetching, saving, and watching data with local caching using **Hive** as the local database. It supports various fetching strategies and integrates with network requests seamlessly to ensure your application works efficiently offline and online.
+The `Flutter_Offline_First` package for Flutter helps implement an **Offline First** approach for fetching, saving, and watching data with local caching using **Hive** as the local database. It supports various fetching strategies and integrates with network requests seamlessly to ensure your application works efficiently offline and online.
 
 This package provides the following features:
 
@@ -20,7 +20,7 @@ Add the following dependency to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  offline_first: latest
+  flutter_offline_first: latest
 ```
 
 Run the command to fetch dependencies:
