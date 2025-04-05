@@ -150,4 +150,6 @@ Contributions are welcome!
 
 Feel free to open issues and pull requests for bug fixes or new features. 
 
+You can also send an email[talk2destinyed@gmail.com]
+
 
