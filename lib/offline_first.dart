@@ -2,10 +2,11 @@ import 'dart:developer';
 
 import 'package:hive_ce_flutter/hive_flutter.dart';
 import 'package:offline_first/src/core/api_client.dart';
-import 'package:offline_first/src/core/enums.dart';
 import 'package:offline_first/src/core/hive_storage_service.dart';
 import 'package:offline_first/src/core/network_helper.dart';
 import 'package:offline_first/src/data/fetch_response.dart';
+
+enum OfflineFirstFetchPolicy { networkOnly, cacheOnly, cacheThenNetwork }
 
 class OfflineFirst {
   final ApiClient _apiClient = ApiClient();
